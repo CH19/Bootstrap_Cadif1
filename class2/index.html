@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeno.fm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+  <body>
+          <!-- <div class="d-flex p-20 col" class="container-fluid row">
+                    <div class="col w-100 d-none d-lg-block bg-danger">hola</div>
+                    <div class="col w-100 bg-primary">hola</div>
+                    <div class="col w-100 bg-warning">hola</div>
+          </div> -->
+          <header class=" row bg-dark text-light">
+                  <section id="ParteIzquierda" class="d-flex col-6 justify-content-between">
+                  <div class="svg logo btn btn-dark"><a href="https://zeno.fm/es/">                        <svg width="68" height="16" viewBox="0 0 68 16" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g class="animate-fill" fill="#FEFEFE" fill-rule="evenodd"><path d="M50.653 2.073A1.845 1.845 0 1 0 48.35 3.86v9.049L36.415.972v11.252a1.845 1.845 0 1 0 .912 0V3.175l11.936 11.936V3.86a1.845 1.845 0 0 0 1.39-1.787M13.782 11.936c-.862 0-1.583.591-1.786 1.39h-9.05L14.883 1.388H3.63a1.845 1.845 0 1 0 0 .912h9.05L.743 14.238h11.252a1.844 1.844 0 1 0 1.786-2.302M60.454 14.815a6.78 6.78 0 0 1-6.773-6.774 6.78 6.78 0 0 1 6.773-6.772 6.78 6.78 0 0 1 6.773 6.772 6.78 6.78 0 0 1-6.773 6.774m0-12.393a5.626 5.626 0 0 0-5.62 5.62 5.626 5.626 0 0 0 5.62 5.62 5.626 5.626 0 0 0 5.62-5.62 5.626 5.626 0 0 0-5.62-5.62M19.952 14.238h11.275v-.942H19.952v.942zm0-11.907h11.275v-.942H19.952v.942zm0 5.954h11.275v-.942H19.952v.942z"/></g></svg>
+                    </a></a></div>
+                      <!-- se coloco los elementos como btn y btn-dark para que el efecto del hoover y otras cosas se aprecie -->
+                      <div class="d-none d-lg-flex p-20 encontrador btn btn-dark " ><figure><ion-icon class="text-warning" name="add-outline"></ion-icon>
+</figure><span>Crear Una sección</span></div>
+<div class="d-none d-lg-flex p-20 encontrador btn btn-dark "  ><figure><ion-icon class="text-warning" name="compass-outline"></ion-icon></figure>
+Discover</div>
+<div class="d-none d-lg-flex p-20"><input type="text" id="InputBusqueda" placeholder="Busqueda por genero calidad o país" class="text-light rounded"></div>
+                  </section>
+                  <section class="d-flex col-lg-6 justify-content-lg-around justify-content-end">
+                    <div class="d-none d-lg-flex p-20 encontrador btn btn-dark " ><figure><ion-icon class="text-warning" name="person-outline"></ion-icon></figure><span>Iniciar Sesión</span></div>
+                    <div class="d-none d-lg-flex p-20"><button class="btn btn-light">sing up</button></div>
+                     <figure class="d-flex d-lg-none p-20"><ion-icon name="menu-outline"></ion-icon></figure>
+                  </section>
+                  <section class="">
+                   
+                  </section>
+          </header>
+         <!-- Colocando el cuerpo de la pagina  -->
+         <!-- Parte Main  -->
+          <main class="row">
+            <!-- imagen del microfono  -->
+            <div class="col-lg-5 h-50 h-lg-100 m-0 p-0" id="imgUno">
+              <figure>
+                 <img  id="Microfono" class="w-100 h-sm100" src="https://zeno.fm/wp-content/uploads/2020/11/hero@2x-1.jpg" class="w-100" alt="">
+              </figure>
+            </div>
+            <!-- Publicidad amarilla  -->
+             <div class="col-lg-7 p-0 m-0 bg-warning d-flex justify-content-center align-items-center ">
+            <div class="container d-flex flex-column">
+                
+                   <span class="fs-1"><b>La forma más sencilla de crear y escuchar emisoras de radio y pódcast</b>
+                   </span>
+                <span>Regístrate y descubre todo lo que ofrece Zeno.</span>
+                <button class="btn btn-dark w-25 rounded">Empieza ahora</button>
+            </div>
+              </div>
+           <!-- Input para buscar estaciones  -->
+            <!-- <div class="form-control"><input type="text" placeholder="Busqueda por genero ubicación o país"> <button class="btn btn-warning">Search</button></div> -->
+            <div id="Buscador" class="container-fluid form-control h-auto mx-auto w-75 position-relative rounded shadow">
+              <div class="row">
+              <input type="text" id="BuscadorUbicacion" class="col-9 border-0" placeholder="Busqueda por genero ubicación o país"> 
+              <button class="btn btn-warning col-3 rounded-pill">Search</button>
+              </div>
+            </div>
+          </main>
+          <!-- boton de ejemplo  -->
+          <!-- <input type="submit" value="Hola" class=""> -->
+          <div id="Socios">
+           
+            <div class="container">
+               <h2 class="text-center mb-5">Nuestros Socios</h2>
+              <!-- se coloca el contenedor de las imagenes con altura también para que pueda limitar con las demás cosas -->
+              <div class="row" style="height: 15rem;"> 
+                <div class=" col border-end"  style=" background-image: url(https://zeno.fm/wp-content/uploads/2021/03/NPR-Black.png); background-size: contain;  background-repeat: no-repeat;   background-position: center center"></div>
+                <div class=" col border-end" style="background-image: url(https://zeno.fm/wp-content/uploads/2021/03/Estrella-Media-Transparent-Black-V2.png); background-size: contain;  background-repeat: no-repeat;   background-position: center center""></div>
+                <div class="d-block d-sm-none"></div>
+                <div class=" col border-end" style="background-image: url(https://zeno.fm/wp-content/uploads/2021/03/BBC-Transparent-invert.png); background-size: contain;  background-repeat: no-repeat;   background-position: center center""></div>
+                <div class=" col border-end" style="background-image: url(https://zeno.fm/wp-content/uploads/2021/03/Washington-Post-Transparent-invert.png); background-size: contain;  background-repeat: no-repeat;   background-position: center center""></div>
+                <div class="col-sm d-none d-lg-block border-end" style="background-image: url(https://zeno.fm/wp-content/uploads/2021/03/VOA-Black-V2.png); background-size: contain;  background-repeat: no-repeat;   background-position: center center""></div>
+              </div>
+            </div>
+          </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!-- Falta optimizar el menu hamburguesa de la version movil  -->

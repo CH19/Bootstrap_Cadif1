@@ -1,0 +1,45 @@
+.form-control:focus {
+    border: solid #FFC107 2px; /* Cambiar a tu color deseado */
+  }
+  .logo:hover{
+            color: yellow;
+  }
+  #InputBusqueda{
+            background-color: #333333;
+  }
+  #InputBusqueda:active{
+            border: red solid 1px;
+  }
+  main > div, img{
+            height: 40rem;
+  }
+  #Microfono{
+    width: 100%;
+  ;
+    object-fit: cover;
+  }
+  .encontrador:hover{
+   color: yellow;
+  }
+  #BuscadorUbicacion:focus-visible{
+   outline: none;
+  }
+  #Buscador:focus-visible{
+    border: #FFC107 solid 1px;
+  }
+  #Buscador{
+    bottom: 40px;
+  }
+   div{
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  } 
+  @media screen and (min-width: 480px) {
+  .border-end{
+    border: none;
+    outline: none;
+  }
+  }
+  
