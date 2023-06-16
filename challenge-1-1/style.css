@@ -1,0 +1,31 @@
+header, menu{
+          justify-content: space-around;
+}
+ion-icon{
+                    font-size: 1.5rem;
+
+}
+
+.menuPrincipal ion-icon, .menuIcon{
+                              background-color: lightgray;
+                    border-radius: 20px;
+                    padding: 5px; /*No se coloco la clase de bootsrap porque literalmente era mas facil dar el padding asi*/
+}
+menu li{
+          list-style: none;
+}
+section{
+          width: 200px;
+          justify-content: space-evenly;
+}
+menu{
+          width: 300px;
+}
+menu > .user:first-of-type{
+          width: 40px;
+          height: fit-content;
+}
+.desktop-menu ion-icon:hover{
+          color: #0d6efd;
+          border-bottom: solid 1px #0d6efd;
+}

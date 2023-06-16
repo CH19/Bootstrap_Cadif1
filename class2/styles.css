@@ -19,7 +19,7 @@
     object-fit: cover;
   }
   .encontrador:hover{
-   color: yellow;
+   color: #FFC107;
   }
   #BuscadorUbicacion:focus-visible{
    outline: none;
@@ -30,12 +30,7 @@
   #Buscador{
     bottom: 40px;
   }
-   div{
-    background-image: url();
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  } 
+
   @media screen and (min-width: 480px) {
   .border-end{
     border: none;
