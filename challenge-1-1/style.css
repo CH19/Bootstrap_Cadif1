@@ -2,8 +2,10 @@ header, menu{
           justify-content: space-around;
 }
 ion-icon{
-                    font-size: 1.5rem;
-
+                    font-size: 24px;
+}
+#logo-facebook{
+    font-size: 50px ;
 }
 
 .menuPrincipal ion-icon, .menuIcon{
@@ -21,11 +23,22 @@ section{
 menu{
           width: 300px;
 }
-menu > .user:first-of-type{
-          width: 40px;
+.user:first-of-type{
+          width: 100px;
           height: fit-content;
 }
 .desktop-menu ion-icon:hover{
           color: #0d6efd;
           border-bottom: solid 1px #0d6efd;
 }
+#Lupita{
+    left: 40px;
+    top: 15px;
+}
+.historie{
+ background-size: cover; background-repeat: no-repeat; background-position: center center; opacity: 80%;
+
+}
+/* 
+Nosotros los de la tarde estamos cuadrando una actividad de matematica con el profe Luis Ciroco. Entonces queria invitarlos a ustedes los de la mañana para ese conversatorio
+Queria preguntarte si podría comunicar esa información en su grupa y tal porque bueh no se si después les ladilla y tal JADSJA */
