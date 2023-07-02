@@ -15,27 +15,43 @@
           </div> -->
         <!-- Clase 3 usando navbars -->
         <!-- navbars de la clase 1   -->
-        <header class=" row bg-dark text-light">
-                  <section id="ParteIzquierda" class="d-flex col-6 justify-content-between">
-                  <div class="svg logo btn btn-dark"><a href="https://zeno.fm/es/">                        <svg width="68" height="16" viewBox="0 0 68 16" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g class="animate-fill" fill="#FEFEFE" fill-rule="evenodd"><path d="M50.653 2.073A1.845 1.845 0 1 0 48.35 3.86v9.049L36.415.972v11.252a1.845 1.845 0 1 0 .912 0V3.175l11.936 11.936V3.86a1.845 1.845 0 0 0 1.39-1.787M13.782 11.936c-.862 0-1.583.591-1.786 1.39h-9.05L14.883 1.388H3.63a1.845 1.845 0 1 0 0 .912h9.05L.743 14.238h11.252a1.844 1.844 0 1 0 1.786-2.302M60.454 14.815a6.78 6.78 0 0 1-6.773-6.774 6.78 6.78 0 0 1 6.773-6.772 6.78 6.78 0 0 1 6.773 6.772 6.78 6.78 0 0 1-6.773 6.774m0-12.393a5.626 5.626 0 0 0-5.62 5.62 5.626 5.626 0 0 0 5.62 5.62 5.626 5.626 0 0 0 5.62-5.62 5.626 5.626 0 0 0-5.62-5.62M19.952 14.238h11.275v-.942H19.952v.942zm0-11.907h11.275v-.942H19.952v.942zm0 5.954h11.275v-.942H19.952v.942z"/></g></svg>
-                    </a></a></div>
-                      <!-- se coloco los elementos como btn y btn-dark para que el efecto del hoover y otras cosas se aprecie -->
-                      <div class="d-none d-lg-flex p-20 encontrador btn btn-dark " ><figure><ion-icon class="text-warning" name="add-outline"></ion-icon>
-</figure><span>Crear Una sección</span></div>
-<div class="d-none d-lg-flex p-20 encontrador btn btn-dark "  ><figure><ion-icon class="text-warning" name="compass-outline"></ion-icon></figure>
-Discover</div>
-<div class="d-none d-lg-flex p-20"><input type="text" id="InputBusqueda" placeholder="Busqueda por genero calidad o país" class="text-light rounded"></div>
-                  </section>
-                  <section class="d-flex col-lg-6 justify-content-lg-around justify-content-end">
+        <header class="container-fluid bg-dark text-light justify-content-between d-flex position-fixed ">
+          <nav class="col-lg-6 navbar d-flex align-items-center">     
+              <ul class="navbar-nav flex-row w-100 justify-content-lg-around">
+              <li class="nav-item">
+                <div class="container-fluid">
+                  <a href="https://zeno.fm/es/" class="navbar-brand">
+                    <svg width="68" height="16" viewBox="0 0 68 16" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g class="animate-fill" fill="#FEFEFE" fill-rule="evenodd"><path d="M50.653 2.073A1.845 1.845 0 1 0 48.35 3.86v9.049L36.415.972v11.252a1.845 1.845 0 1 0 .912 0V3.175l11.936 11.936V3.86a1.845 1.845 0 0 0 1.39-1.787M13.782 11.936c-.862 0-1.583.591-1.786 1.39h-9.05L14.883 1.388H3.63a1.845 1.845 0 1 0 0 .912h9.05L.743 14.238h11.252a1.844 1.844 0 1 0 1.786-2.302M60.454 14.815a6.78 6.78 0 0 1-6.773-6.774 6.78 6.78 0 0 1 6.773-6.772 6.78 6.78 0 0 1 6.773 6.772 6.78 6.78 0 0 1-6.773 6.774m0-12.393a5.626 5.626 0 0 0-5.62 5.62 5.626 5.626 0 0 0 5.62 5.62 5.626 5.626 0 0 0 5.62-5.62 5.626 5.626 0 0 0-5.62-5.62M19.952 14.238h11.275v-.942H19.952v.942zm0-11.907h11.275v-.942H19.952v.942zm0 5.954h11.275v-.942H19.952v.942z"/></g></svg>
+                  </a></div>
+              </li>
+                <li class="nav-item">     <div class="d-none d-lg-flex p-20 encontrador btn btn-dark " ><figure><ion-icon class="text-warning" name="add-outline"></ion-icon>
+                </figure><span>Crear Una sección</span></div></li>
+                <li class="nav-item"><div class="d-none d-lg-flex p-20 encontrador btn btn-dark "  ><figure><ion-icon class="text-warning" name="compass-outline"></ion-icon></figure>
+                  Discover</div></li>
+                <li class="nav-item"><div class="d-none d-lg-flex p-20"><input type="text" id="InputBusqueda" placeholder="Busqueda por genero calidad o país" class="text-light w-100 rounded-4"></div>
+                </li>
+              </ul>
+            </div>
+          </nav>       
+        
+<!-- header anterior pero con navbar  -->
+                  <section class="d-flex col-lg-6 align-items-center justify-content-lg-around justify-content-end">
                     <div class="d-none d-lg-flex p-20 encontrador btn btn-dark " ><figure><ion-icon class="text-warning" name="person-outline"></ion-icon></figure><span>Iniciar Sesión</span></div>
                     <div class="d-none d-lg-flex p-20"><button class="btn btn-light">sing up</button></div>
-                     <figure class="d-flex d-lg-none p-20"><ion-icon name="menu-outline"></ion-icon></figure>
+                     <figure class="d-flex d-lg-none p-20 btn-group dropstart"><button class="fs-1 align-self-start btn btn-dark dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false"><ion-icon class="text-warning" name="menu-outline"></ion-icon></button> 
+                    <ul class="dropdown-menu bg-warning">
+                      <li class="dropdown-item">Crear Una Seccion</li>
+                      <li class="dropdown-item">Discover</li>
+                      <li class="dropdown-item">Iniciar Sesion</li>
+                      <li class="dropdown-item bg-light">Registrarse</li>
+                    </ul>
+                    </figure>
                   </section>
                   <section class="">
                    
                   </section>
           </header>
-          <!-- fin navbar de la clase 1  -->
+        
          <!-- Colocando el cuerpo de la pagina  -->
          <!-- Parte Main  -->
           <main class="row">

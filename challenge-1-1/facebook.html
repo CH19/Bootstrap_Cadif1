@@ -6,7 +6,12 @@
     <title>Facebook</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-</head>
+<style>
+.dropdown-menu > li:hover{
+  cursor: pointer;
+}
+</style>
+  </head>
 <body>
     <header class="container text-secondary d-flex align-items-center">
         
@@ -28,31 +33,33 @@
                 
            </figure>
           </section> 
-          <menu class="desktop-menu my-0 d-md-flex d-none ">
-            <li>
-              <figure> 
-                <ion-icon name="home-outline"></ion-icon>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <ion-icon name="tv-outline"></ion-icon>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <ion-icon name="storefront-outline"></ion-icon>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <ion-icon name="people-outline"></ion-icon>
-              </figure>
-            </li>
-            <li>
-              <figure><ion-icon name="cube-outline"></ion-icon></figure>
-            </li>
-           </menu>
+          <nav class="desktop-menu my-0 d-md-flex d-none w-100 justify-content-center">
+            <ul class="navbar-nav flex-row w-50 justify-content-around">
+              <li class="nav-item">
+                <figure>
+                  <ion-icon name="home-outline"></ion-icon>
+                </figure>
+              </li>
+              <li class="nav-item">
+                <figure>
+                  <ion-icon name="tv-outline"></ion-icon>
+                </figure>
+              </li>
+              <li class="nav-item">
+                <figure>
+                  <ion-icon name="storefront-outline"></ion-icon>
+                </figure>
+              </li>
+              <li class="nav-item">
+                <figure>
+                  <ion-icon name="people-outline"></ion-icon>
+                </figure>
+              </li>
+              <li class="nav-item">
+                <figure><ion-icon name="cube-outline"></ion-icon></figure>
+              </li>
+            </ul>
+           </nav>
            <menu class=" menuPrincipal d-flex my-0 w-lg text-dark">
             <li class="user d-none d-md-block rounded-pill">
                         <img class="w-100" class="" src="https://media.vandal.net/t200/27595/hollow-knight-2017223111334_12.jpg" alt="">
@@ -88,59 +95,81 @@
     </header>
     <main class="row container-fluid" style="background-color: #F0F2F5;">
         <section class=" my-4 col-md-4 d-none d-md-grid flex-column" style=" ">
-         <div id="user" class="d-flex flex-row w-100">
+         <div id="user" style="height: fit-content;" class="d-flex flex-row w-100 btn dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
              <figure class="user d-md-block rounded-circle p-0 mx-3" style="height: 30px;background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png); background-size: contain;  background-repeat: no-repeat;   background-position: center center">
              </figure>
              <span class="p-0 m-0">Christian Daniel La Cruz Cotua</span>
          </div>
-         <div id="Friends" class="d-flex flex-row ">
-            <figure class="mx-4 text-primary"><ion-icon name="people-outline"></ion-icon></figure>
-            <span class="fw-bold">Amigos <br><p class="text-primary fw-medium"style="font-size: 12px;">&#11824;+1 notificacion</p></span>
-            
-         </div>
-        <div id="groups" class="d-flex flex-row ">
-            <figure class="mx-4 text-primary"><ion-icon name="person-circle-outline"></ion-icon></figure>
-            <span class="fw-bold">Grupos</span>
-        </div>
-        <div id="marketPlace" class="d-flex flex-row ">
-            <figure class="mx-4 text-primary"><ion-icon name="storefront-outline"></ion-icon></figure>
-            <span class="fw-bold">marketPlace</span>
-        </div>
-        <div id="watch" class="d-flex flex-row ">
-            <figure class="mx-4 text-primary"><ion-icon name="play-circle-outline"></ion-icon></figure>
-            <span class="fw-bold">watch</span>
-        </div>
-        <div id="remembers" class="d-flex flex-row ">
-            <figure class="mx-4 text-primary"><ion-icon name="time-outline"></ion-icon></figure>
-            <span class="fw-bold">remembers <br><p class="text-primary fw-medium"style="font-size: 12px;">&#11824;+9 notificaciones</p></span>
-         
-        </div>
-        <div id="saved" class="d-flex flex-row ">
-            <figure class="mx-4 text-success"><ion-icon name="bookmark-outline"></ion-icon></figure>
-            <span class="fw-bold">saved</span>
-        </div>
-        <div id="pages" class="d-flex flex-row ">
-            <figure class="mx-4 text-warning-emphasis"><ion-icon name="flag-outline"></ion-icon></figure>
-            <span class="fw-bold">pages <br><p class="text-primary fw-medium"style="font-size: 12px;">&#11824;+9 notificaciones</p></span>
-        </div>
-        <div id="events" class="d-flex flex-row ">
-            <figure class="mx-4 text-danger">
-                <ion-icon name="calendar-outline"></ion-icon>
-            </figure>
-            <span class="fw-bold">events <br><p class="text-primary fw-medium"style="font-size: 12px;">&#11824;+1 notificacion</p></span>
-        </div>
-        <div id="works" class="d-flex flex-row ">
-            <figure class="mx-4 text-warning-emphasis">
-                <ion-icon name="bag-handle-outline"></ion-icon>
-            </figure>
-            <span class="fw-bold">works</span>
-        </div>
-        <div id="seeMore" class="d-flex flex-row ">
-            <figure class="mx-4 fw-bold">
-                <ion-icon name="chevron-down-circle-outline"></ion-icon>
-            </figure>
-            <span class="fw-bold">see more</span>
-        </div>
+      
+         <ul class="dropdown-menu">
+           <li>
+             <div id="Friends" class="d-flex flex-row ">
+                <figure class="mx-4 text-primary"><ion-icon name="people-outline"></ion-icon></figure>
+                <span class="fw-bold">Amigos <br><p class="text-primary fw-medium"style="font-size: 12px;">&#11824;+1 notificacion</p></span>
+             
+             </div>
+           </li>
+                   <li>
+                     <div id="groups" class="d-flex flex-row ">
+                                   <figure class="mx-4 text-primary"><ion-icon name="person-circle-outline"></ion-icon></figure>
+                                   <span class="fw-bold">Grupos</span>
+                     </div>
+                   </li>
+                   <li>
+                     <div id="marketPlace" class="d-flex flex-row ">
+                                   <figure class="mx-4 text-primary"><ion-icon name="storefront-outline"></ion-icon></figure>
+                                   <span class="fw-bold">marketPlace</span>
+                     </div>
+                   </li>
+                   <li>
+                     <div id="watch" class="d-flex flex-row ">
+                                   <figure class="mx-4 text-primary"><ion-icon name="play-circle-outline"></ion-icon></figure>
+                                   <span class="fw-bold">watch</span>
+                     </div>
+                   </li>
+                   <li>
+                     <div id="remembers" class="d-flex flex-row ">
+                                   <figure class="mx-4 text-primary"><ion-icon name="time-outline"></ion-icon></figure>
+                                   <span class="fw-bold">remembers <br><p class="text-primary fw-medium"style="font-size: 12px;">&#11824;+9 notificaciones</p></span>
+                     </div>
+                   </li>
+                   <li>
+                     <div id="saved" class="d-flex flex-row ">
+                                   <figure class="mx-4 text-success"><ion-icon name="bookmark-outline"></ion-icon></figure>
+                                   <span class="fw-bold">saved</span>
+                     </div>
+                   </li>
+                   <li>
+                     <div id="pages" class="d-flex flex-row ">
+                                   <figure class="mx-4 text-warning-emphasis"><ion-icon name="flag-outline"></ion-icon></figure>
+                                   <span class="fw-bold">pages <br><p class="text-primary fw-medium"style="font-size: 12px;">&#11824;+9 notificaciones</p></span>
+                     </div>
+                   </li>
+                   <li>
+                     <div id="events" class="d-flex flex-row ">
+                                   <figure class="mx-4 text-danger">
+                                       <ion-icon name="calendar-outline"></ion-icon>
+                                   </figure>
+                                   <span class="fw-bold">events <br><p class="text-primary fw-medium"style="font-size: 12px;">&#11824;+1 notificacion</p></span>
+                     </div>
+                   </li>
+                   <li>
+                     <div id="works" class="d-flex flex-row ">
+                                   <figure class="mx-4 text-warning-emphasis">
+                                       <ion-icon name="bag-handle-outline"></ion-icon>
+                                   </figure>
+                                   <span class="fw-bold">works</span>
+                     </div>
+                   </li>
+                   <li>
+                     <div id="seeMore" class="d-flex flex-row ">
+                                   <figure class="mx-4 fw-bold">
+                                       <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                                   </figure>
+                                   <span class="fw-bold">see more</span>
+                     </div>
+                   </li>
+         </ul>
         </section> 
         <section class="container-fluid my-4 col-md-4 d-flex position-relative">
             <div id="histories" class="container-fluid row gap-1 h-25">
