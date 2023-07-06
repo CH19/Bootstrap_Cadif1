@@ -4,7 +4,8 @@ const Lista = {
     Nombre: ['Friends','Groups', 'MarketPlace', 'Watch', 'remembers', 'Saved', 'pages', 'events', 'Works', 'See More'],
     Logo: ['<ion-icon name="people-outline"></ion-icon>','<ion-icon name="person-circle-outline"></ion-icon>','<ion-icon name="storefront-outline"></ion-icon>', '<ion-icon name="play-circle-outline"></ion-icon>','<ion-icon name="time-outline"></ion-icon>','<ion-icon name="bookmark-outline"></ion-icon>','<ion-icon name="flag-outline"></ion-icon>','                                       <ion-icon name="calendar-outline"></ion-icon>','<ion-icon name="bag-handle-outline"></ion-icon>','                                       <ion-icon name="chevron-down-circle-outline"></ion-icon>' ],
     id: []
-}
+};
+const histories = document.querySelectorAll('.historie');
 //  console.log(Lista.Logo[0] + ',' + Lista.Nombre[0]);
 // console.log(estrucutra)
 // const menusito = document.querySelector('#Menusito');
@@ -55,7 +56,39 @@ function generarLeftBarNotification(Casilla, icono, notificaciones){
 <li>    `
 return $(`#${Casilla}`).append(estrucutra);
 }
+//LLamado de la función para crear los elementos html con las notificaciones
 generarLeftBarNotification(Lista.Nombre[0], Lista.Logo[0], '2');
 generarLeftBarNotification(Lista.Nombre[4], Lista.Logo[4], '9');
 generarLeftBarNotification(Lista.Nombre[6], Lista.Logo[6], '7');
 generarLeftBarNotification(Lista.Nombre[7], Lista.Logo[7], '4');
+
+histories.forEach(historie =>{
+    let idTemporal = (Math.random() * 100).toString(36).slice(3);
+    historie.setAttribute('data-bs-toggle',"modal");
+    historie.setAttribute('data-bs-target',`#${idTemporal}`);
+    historie.setAttribute('type', 'button');
+    historie.classList.add('btn')
+
+    let estrucutraModal = `
+    <div class="modal fade" style="z-index: 1000;" id="${idTemporal}" tabindex="-1" aria-labelledby="${idTemporal}Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="${idTemporal}Label">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h1>HOLAHOLAHOLA</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    `
+    
+    console.log(window.getComputedStyle(historie).getPropertyValue('background-image'));
+$(historie).append(estrucutraModal)
+})
